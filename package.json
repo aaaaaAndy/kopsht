@@ -1,0 +1,24 @@
+{
+  "name": "kopsht",
+  "version": "1.0.0",
+  "description": "a command tool",
+  "main": "index.js",
+  "bin": {
+    "kopsht": "bin/index.js",
+    "kp": "bin/index.js"
+  },
+  "author": "aaaaaandy",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0",
+    "os": "^0.1.1",
+    "webpack": "4",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  },
+  "devDependencies": {},
+}
