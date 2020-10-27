@@ -8,8 +8,7 @@
     "kp": "bin/index.js"
   },
   "scripts": {
-    "patch": "npm version patch",
-    "publish": "npm publish"
+    "patch": "npm version patch"
   },
   "author": "aaaaaandy",
   "license": "ISC",
