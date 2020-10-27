@@ -2,7 +2,6 @@
   "name": "kopsht",
   "version": "1.0.1",
   "description": "a command tool",
-  "main": "index.js",
   "bin": {
     "kopsht": "bin/index.js",
     "kp": "bin/index.js"
