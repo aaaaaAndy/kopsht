@@ -1,6 +1,6 @@
 {
   "name": "kopsht",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a command tool",
   "main": "bin/index.js",
   "bin": {
