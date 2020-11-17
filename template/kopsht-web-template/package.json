@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack build"
+    "dev": "kopsht serve",
+    "build": "kopsht build"
   },
   "author": "",
   "license": "ISC",
