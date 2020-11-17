@@ -14,7 +14,7 @@ npm install kopsht -g
 yarn global add kopsht
 ```
 
-## 2. 基础命令
+### 2. 基础命令
 
 安装后`kopsht`后全局支持`kopsht`命令和简写版的`kp`命令！以下用`kp`命令代替`kopsht`命令：
 

@@ -27,5 +27,5 @@ module.exports = {
 	DEFAULT_PORT: 8000,
 
 	// kopsht配置文件名
-	KOPSHT_CONFIG_NAME: 'kopsht/index.js',
+	KOPSHT_CONFIG_NAME: 'webpack/index.js',
 }
