@@ -10,6 +10,7 @@ import Home from '@/pages/home';
 import Portal from '@/pages/portal'
 
 const routers = (
+	// 根据需求修改basename
 	<Router basename="/kopsht-demo">
 		<Index>
 			<Redirect to="/home" from="/" />

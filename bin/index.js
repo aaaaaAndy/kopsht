@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 const commander = require('commander');
+const { prompt } = require('inquirer');
 const pkg = require('../package.json');
+const { NAME_INPUT, TYPE_CHOICES } = require('../configs');
 const {
 	serve,
 	build,
@@ -13,9 +15,21 @@ commander.version(pkg.version);
 
 // 创建并初始化项目
 commander
-	.command('init <name>')
+	.command('init [name]')
 	.description('initialize a project!')
-	.action(initialize);
+	.action(async (name) => {
+		if (!name) {
+			// 若未输入项目名称则提醒输入项目名称
+			const input = await prompt(NAME_INPUT);
+			name = input.name;
+		}
+
+		// 选择模板
+		const { type } = await prompt(TYPE_CHOICES);
+
+		// 创建项目并初始化
+		initialize(name, type);
+	});
 
 // 启动一个项目
 commander

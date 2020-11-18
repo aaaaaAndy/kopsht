@@ -1,4 +1,5 @@
 const path = require('path');
+const { NAME_INPUT, TYPE_CHOICES } = require('./inquirer');
 
 const resolve = path.resolve;
 
@@ -17,8 +18,13 @@ module.exports = {
 	DEVELOPMENT,
 	PRODUCTION,
 
+	// inquirer定义
+	NAME_INPUT,
+	TYPE_CHOICES,
+
 	TEMPLATE: {
-		WEB: resolve(KOPSHT_PATH, 'template/kopsht-web-template')
+		REACT_WEB: resolve(KOPSHT_PATH, 'template/react-web-template'),
+		REACT_MOBILE: resolve(KOPSHT_PATH, 'template/react-mobile-template')
 	},
 
 	// 默认启动参数
@@ -27,5 +33,5 @@ module.exports = {
 	DEFAULT_PORT: 8000,
 
 	// kopsht配置文件名
-	KOPSHT_CONFIG_NAME: 'webpack/index.js',
+	KOPSHT_CONFIG_NAME: 'config/index.js',
 }

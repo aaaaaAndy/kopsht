@@ -13,7 +13,7 @@ const {
  * 初始化一个项目
  * @param projectName
  */
-function initialize(projectName) {
+function initialize(projectName, type) {
 
 	if (!projectName) {
 		validate(!!projectName, 'need input a project name!!!');
@@ -22,8 +22,9 @@ function initialize(projectName) {
 
 	projectName = projectName !== '.' ? projectName : './';
 	const projectPath = getAbsolutePath(projectName, CURRENT_PATH);
+	const templatePath = TEMPLATE[type];
 
-	createProject(TEMPLATE.WEB, projectPath)
+	createProject(templatePath, projectPath)
 
 	execYarnInstall(projectPath);
 }
