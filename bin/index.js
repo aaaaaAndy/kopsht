@@ -48,11 +48,5 @@ commander
 	.description('build a project!')
 	.action(build)
 
-commander
-	.command('test')
-	.action(() => {
-		require('../utils').print('this is a test command');
-	})
-
 commander.parse(process.argv);
 

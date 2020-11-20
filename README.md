@@ -20,14 +20,17 @@ yarn global add kopsht
 
 #### 2.1 初始化命令
 
-初始化当前目录
-
+- 初始化当前目录
 ```shell
 kp init .
 ```
 
-在当前目录下新建并初始化一个名为`react-demo`的项目：
+- 初始化项目，后续会要求输入文件名
+```bash
+kp init
+```
 
+- 在当前目录下新建并初始化一个名为`react-demo`的项目：
 ```shell
 kp init react-demo
 ```
@@ -54,3 +57,6 @@ kp serve --host localhost --port 8081
 kp build
 ```
 
+### 3. 模板支持
+
+目前仅支持web和mobile模板。
