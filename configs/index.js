@@ -24,7 +24,8 @@ module.exports = {
 
 	TEMPLATE: {
 		REACT_WEB: resolve(KOPSHT_PATH, 'template/react-web-template'),
-		REACT_MOBILE: resolve(KOPSHT_PATH, 'template/react-mobile-template')
+		REACT_MOBILE: resolve(KOPSHT_PATH, 'template/react-mobile-template'),
+		KOA_NODE: resolve(KOPSHT_PATH, 'template/koa-node-template'),
 	},
 
 	// 默认启动参数

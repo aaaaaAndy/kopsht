@@ -15,7 +15,8 @@ const TYPE_CHOICES = [
 		name: 'type',
 		choices: [
 			{ name: 'react template for pc', value: 'REACT_WEB' },
-			{ name: 'react template for mobile', value: 'REACT_MOBILE' }
+			{ name: 'react template for mobile', value: 'REACT_MOBILE' },
+			{ name: 'koa template for node', value: 'KOA_NODE' }
 		],
 	}
 ]
