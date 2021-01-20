@@ -28,7 +28,6 @@ function getIPAddress() {
  */
 function getRunningIp(host) {
 	const selfIp = [
-		'localhost',
 		'0.0.0.0',
 		'127.0.0.1'
 	];
