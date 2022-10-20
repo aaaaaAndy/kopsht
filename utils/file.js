@@ -73,10 +73,23 @@ function createProject(src, dest) {
 	spinner.succeed('create finished!!!');
 }
 
+/**
+ * 替换指定文件的特定字符串
+ * @param  {string} src    文件路径
+ * @param  {string} oldStr 待替换旧字符
+ * @param  {string} newStr 新字符
+ */
+function replaceFileStr(src, oldStr, newStr) {
+  const file = fs.readFileSync(src, 'utf-8');
+  var newFile = file.replace(oldStr, newStr);
+  fs.writeFileSync(src, newFile, 'utf-8');
+}
+
 module.exports = {
 	resolve,
 	getAbsolutePath,
 	fileExists,
 	getKopshtConfig,
 	createProject,
+  replaceFileStr,
 }

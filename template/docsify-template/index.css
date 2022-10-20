@@ -1,0 +1,110 @@
+:root {
+  --docsifytabs-border-color: #ededed;
+  --docsifytabs-tab-highlight-color: rgb(58, 176, 120);
+}
+
+.docsify-tabs__tab {
+  cursor: pointer;
+}
+
+html,
+body {
+  font-family: Jetbrains Mono Medium;
+}
+
+.sidebar-nav > ul > li {
+  counter-increment: count_h1;
+}
+
+.sidebar-nav > ul > li > a {
+  margin-left: 38px;
+}
+
+.sidebar-nav > ul > li > .app-sub-sidebar {
+  padding-left: 20px;
+}
+
+.sidebar-nav > ul > li::before {
+  content: counter(count_h1) ".";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  text-align: right;
+}
+
+.app-sub-sidebar > li::before {
+  content: '';
+  display: none;
+} 
+
+.markdown-section blockquote {
+  background-color: rgb(235, 247, 241);
+  padding: 1px 1rem;
+  display: block;
+}
+
+.markdown-section > h2 {
+  font-size: 28px !important;
+  border-bottom: 1px double #eaecef;
+}
+
+.markdown-section > h2::before {
+  display: inline-block;
+  border: none !important;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 40px !important;
+}
+
+.markdown-section > h3 {
+  position: relative;
+  font-size: 22px;
+  margin: 16px 0 8px 0 !important;
+}
+
+.markdown-section > h3::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 5px;
+
+  height: 26px;
+  width: 6px;
+
+  margin-right: 8px;
+  background-color: #3eaf7c;
+}
+
+.markdown-section > h4 {
+  position: relative;
+  font-size: 20px;
+}
+
+.markdown-section > h4::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  margin-right: 8px;
+  background-color: #3eaf7c;
+}
+
+.markdown-section > ul, .markdown-section > ol {
+  margin-left: 16px;
+}
+
+p > img,
+.mermaid > svg {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.markdown-section table {
+  display: table;
+}

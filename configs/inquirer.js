@@ -14,9 +14,10 @@ const TYPE_CHOICES = [
 		message: 'please choose a template：',
 		name: 'type',
 		choices: [
+      { name: 'docsify template for markdown', value: 'DOCSIFY' },
 			{ name: 'react template for pc', value: 'REACT_WEB' },
 			{ name: 'react template for mobile', value: 'REACT_MOBILE' },
-			{ name: 'koa template for node', value: 'KOA_NODE' }
+			{ name: 'koa template for node', value: 'KOA_NODE' },
 		],
 	}
 ]
