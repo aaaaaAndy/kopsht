@@ -5,7 +5,8 @@
   "main": "bin/index.js",
   "bin": {
     "kopsht": "bin/index.js",
-    "kp": "bin/index.js"
+    "kp": "bin/index.js",
+    "kk": "bin/index.js"
   },
   "scripts": {
     "patch": "npm version patch"
